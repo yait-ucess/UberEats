@@ -7,16 +7,16 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 3.times do |n|
   restaurant = Restaurant.new(
-    name: "restaurant_#{n}",
+    name: "restaurant_#{n+1}",
     fee: 100,
     time_required: 10,
   )
 
   12.times do |m|
     restaurant.foods.build(
-      name: "food_#{m}",
+      name: "food_#{m+1}",
       price: 500,
-      description: "#{m} is yummy.",
+      description: "#{m+1} is yummy.",
     )
   end
   

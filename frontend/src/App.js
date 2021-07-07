@@ -14,24 +14,21 @@ const App = () => {
   return (
     <Router>
       <Switch>
-
-        // 店舗一覧ページ
+        店舗一覧ページ
         <Route
           exact
           path="/restaurants"
         >
           <Restaurants />
         </Route>
-
-        // フード一覧ページ
+        フード一覧ページ
         <Route
           exact
           path="/foods"
         >
           <Foods />
         </Route>
-
-        // 注文ページ
+        注文ページ
         <Route
           exact
           path="/orders"
